@@ -1,6 +1,5 @@
 package io.github.chubbyhippo.demo;
 
-import gg.jte.TemplateEngine;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,11 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class PersonController {
     private final PersonService personService;
-    private final TemplateEngine templateEngine;
 
-    public PersonController(PersonService personService, TemplateEngine templateEngine) {
+    public PersonController(PersonService personService) {
         this.personService = personService;
-        this.templateEngine = templateEngine;
     }
 
     @GetMapping("/")
