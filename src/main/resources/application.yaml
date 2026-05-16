@@ -4,3 +4,4 @@ spring:
 gg:
   jte:
     development-mode: true
+    template-location: src/main/jte
