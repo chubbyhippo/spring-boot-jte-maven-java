@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Infinite Scroll with JTE</title>
 
-    <script src="/webjars/htmx.org/2.0.10/dist/htmx.min.js"></script>
+    <script src="/js/htmx/htmx.min.js"></script>
 
     <style>
         body {
