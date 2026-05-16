@@ -11,9 +11,9 @@ public class PersonService {
 
     private final Faker faker = new Faker();
 
-    public List<Person> getPeople(int page, int size) {
+    public List<Person> getPeople(int size) {
         return IntStream.range(0, size)
-                .mapToObj(index -> new Person(
+                .mapToObj(_ -> new Person(
                         faker.name().fullName(),
                         faker.internet().emailAddress(),
                         faker.job().title(),
