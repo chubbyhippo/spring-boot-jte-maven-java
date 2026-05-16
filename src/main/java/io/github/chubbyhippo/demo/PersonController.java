@@ -18,7 +18,7 @@ public class PersonController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("people", personService.getPeople(1, 20));
+        model.addAttribute("people", personService.getPeople(20));
         model.addAttribute("nextPage", 2);
         return "index";
     }
@@ -28,7 +28,7 @@ public class PersonController {
             @RequestParam(defaultValue = "1") int page,
             Model model
     ) {
-        model.addAttribute("people", personService.getPeople(page, 20));
+        model.addAttribute("people", personService.getPeople(20));
         model.addAttribute("nextPage", page + 1);
         return "people";
     }
